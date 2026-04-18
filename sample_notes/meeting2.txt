@@ -1,0 +1,32 @@
+Date: 22 April 2025
+Meeting: Weekly Engineering Sync
+Attendees: Ayush (Backend), Neha (Frontend), Karan (DevOps)
+
+Ayush gave an update on the backend API changes. 70% of the work is complete.
+The authentication endpoints are done. Remaining work is the file upload API
+which will be completed by April 25th.
+
+Neha completed the Redux to Zustand migration ahead of schedule. Frontend is
+now unblocked and she has started integrating with Ayush's new APIs. She
+flagged that the API response format for user profiles needs to be updated —
+currently it returns snake_case but the frontend expects camelCase.
+
+Ayush acknowledged the issue and will fix the response format by April 23rd.
+This is a breaking change so Karan needs to update the staging environment
+before Neha can test.
+
+Karan provided a DevOps update. The new staging environment is ready. He has
+set up automated deployments from the main branch. Every merge to main now
+triggers a deployment to staging within 5 minutes.
+
+Karan also raised a security concern — the current S3 bucket for file uploads
+is publicly accessible. This needs to be fixed before going to production.
+Karan will make the bucket private and set up signed URLs by April 24th.
+
+Action Items:
+- Ayush: Fix API response format (snake_case to camelCase) by April 23rd
+- Ayush: Complete file upload API by April 25th
+- Karan: Make S3 bucket private and set up signed URLs by April 24th
+- Karan: Update staging environment after Ayush's API format fix
+
+Next sync scheduled for April 29th at 11am.

@@ -1,0 +1,34 @@
+Date: 15 April 2025
+Meeting: Q2 Product Roadmap Planning
+Attendees: Rahul (PM), Priya (Design), Ayush (Backend), Neha (Frontend)
+
+Rahul opened the meeting at 2pm. The main agenda was to finalize the Q2 roadmap 
+and assign ownership for each workstream.
+
+Priya presented the new design mockups for the mobile app. The team agreed the 
+onboarding flow needs to be simplified. Priya will revise the mockups by April 20th 
+and share with the team for feedback.
+
+Ayush was assigned to own the backend API changes required for the new onboarding 
+flow. He estimated 2 weeks of work. The API changes need to be ready before Neha 
+can start frontend integration.
+
+Neha raised a concern about the current state management approach in the frontend. 
+The team decided to migrate from Redux to Zustand. Neha will lead this migration 
+and complete it by April 28th.
+
+Rahul confirmed the Q2 deadline is June 30th. Any delays need to be flagged by 
+May 15th at the latest so the timeline can be adjusted.
+
+Budget Discussion:
+The team requested additional cloud infrastructure budget for staging environments. 
+Rahul will follow up with the finance team by end of week. Approval is needed before 
+May 1st to avoid delays.
+
+Action Items:
+- Priya: Revise onboarding mockups by April 20th
+- Ayush: Complete backend API changes by April 29th
+- Neha: Complete Redux to Zustand migration by April 28th
+- Rahul: Get budget approval from finance by May 1st
+
+Next meeting scheduled for April 22nd at 2pm.

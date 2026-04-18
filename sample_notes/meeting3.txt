@@ -1,0 +1,41 @@
+Date: 29 April 2025
+Meeting: Pre-Launch Review
+Attendees: Rahul (PM), Priya (Design), Ayush (Backend), Neha (Frontend), Karan (DevOps)
+
+Rahul opened the meeting with a reminder that the product launch is scheduled
+for May 15th. This is a hard deadline and cannot be moved.
+
+Priya confirmed all design assets are finalized and handed off. The design
+system documentation has been updated on Notion. No open design issues remain.
+
+Ayush confirmed all backend APIs are complete and tested. API documentation
+has been written using Swagger. He flagged one performance issue — the search
+endpoint takes 800ms on average which is above the 500ms target. He proposed
+adding a Redis cache which would bring it down to under 100ms. Rahul approved
+the Redis cache implementation. Ayush will complete it by May 3rd.
+
+Neha reported the frontend is 90% complete. The main remaining task is the
+notification system which she estimates needs 3 more days. All other features
+are complete and tested. She requested a full QA pass from Rahul by May 8th
+to leave enough buffer before launch.
+
+Karan confirmed the production infrastructure is ready. Auto-scaling is
+configured. Monitoring and alerting are set up on Grafana. He estimated the
+production deployment will take 2 hours and proposed doing it on May 13th
+to leave 2 days of buffer before launch.
+
+Risk Discussion:
+Rahul identified two launch risks:
+1. Redis cache implementation could take longer than expected — mitigation is
+   to launch without cache if needed and add it post-launch.
+2. QA might find critical bugs after May 8th — mitigation is to have a
+   go/no-go meeting on May 12th to make the final call.
+
+Action Items:
+- Ayush: Implement Redis cache for search by May 3rd
+- Neha: Complete notification system by May 2nd
+- Rahul: Complete QA pass by May 8th
+- Karan: Production deployment on May 13th
+- All: Attend go/no-go meeting on May 12th at 10am
+
+Launch date confirmed: May 15th 2025.
